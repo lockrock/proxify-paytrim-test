@@ -1,0 +1,76 @@
+@import "index";
+
+.brand-btn {
+  background: $brand;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1;
+  height: 56px;
+  border-radius: $border-radius;
+  border: none;
+  outline: none;
+  box-shadow: rgba(#040C13, 0.16) 0 2px 4px;
+
+  &:active {
+    box-shadow: rgba(#040C13, 0.06) 0 2px 4px;
+    transition-duration: 0.5s ;
+  }
+
+}
+
+.sidebar-description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #F7F7F7;
+  padding: 40px;
+
+  .view-agreement-btn {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+  }
+}
+
+
+.description-item {
+  display: flex;
+
+
+  .description-icon {
+    @include min-size(36px);
+    flex: 0;
+    border-radius: 50%;
+    background: $brand;
+    border: 1px solid $brand;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .description-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12px;
+
+    .description-label {
+      font-weight: 500;
+      font-size: 12px;
+      font-style: normal;
+      color: $label-color;
+    }
+
+    .description-value {
+      font-weight: 500;
+      font-size: 16px;
+      font-style: normal;
+      color: $value-color;
+    }
+  }
+
+}
