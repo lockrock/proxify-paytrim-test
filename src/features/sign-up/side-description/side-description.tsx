@@ -1,9 +1,10 @@
 import React, {CSSProperties} from 'react';
-import './index.scss';
+import '../index.scss';
 import './side-description.scss';
 
 type BrandButtonConfig = React.ButtonHTMLAttributes<HTMLButtonElement> & {children?: JSX.Element | string}
 type BrandButtonProps = BrandButtonConfig;
+
 function BrandButton(props: BrandButtonProps): JSX.Element {
     let btnProps: BrandButtonConfig = {...(props || {})};
     let {className, children, ...otherBtnProps} = btnProps;
