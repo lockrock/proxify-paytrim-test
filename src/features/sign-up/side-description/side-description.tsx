@@ -1,6 +1,6 @@
-import React, { CSSProperties } from 'react';
 import '../index.scss';
 import './side-description.scss';
+import React, { CSSProperties } from 'react';
 
 type BrandButtonConfig = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children?: JSX.Element | string;
@@ -12,9 +12,10 @@ function BrandButton(props: BrandButtonProps): JSX.Element {
   const { className, children, ...otherBtnProps } = btnProps;
   const newClassName =
     className && className.length > 0 ? `brand-btn ${className}` : 'brand-btn';
+
   return (
-      // eslint-disable-next-line react/jsx-props-no-spreading
-    <button type='button' className={newClassName} {...otherBtnProps}>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <button type="button" className={newClassName} {...otherBtnProps}>
       {props.children}
     </button>
   );
@@ -23,6 +24,7 @@ function BrandButton(props: BrandButtonProps): JSX.Element {
 type SideDescriptionProps = {
   onSign(): void;
 };
+
 export function SideDescription(props: SideDescriptionProps): JSX.Element {
   return (
     <div className="sidebar-description">
@@ -54,6 +56,7 @@ type DescriptionItemProps = {
   value: JSX.Element | string;
   outerStyle?: CSSProperties;
 };
+
 export function DescriptionItem(props: DescriptionItemProps): JSX.Element {
   return (
     <div className="description-item" style={props.outerStyle}>

@@ -1,27 +1,4 @@
 {
-//  "parser": "@typescript-eslint/parser",
-//  "parserOptions": {
-//    "project": "./tsconfig.json",
-//    "ignorePatterns": ["*.js", ".jsx"]
-//  },
-//  "extends": [
-//    "plugin:@typescript-eslint/eslint-recommended",
-//    "plugin:@typescript-eslint/recommended",
-//    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-//    "react-app",
-//    "airbnb",
-//    "plugin:jsx-a11y/recommended",
-//    "prettier",
-//    "prettier/react"
-//  ],
-//  "ignorePatterns": ["*.js", ".jsx"],
-//  "plugins": [
-//    "@typescript-eslint",
-//    "eslint-plugin-react",
-//    "jsx-a11y",
-//    "prettier"
-//  ],
-
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "extends": [
@@ -74,7 +51,8 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "sort-imports": "error"
   },
   "overrides": [
     {
